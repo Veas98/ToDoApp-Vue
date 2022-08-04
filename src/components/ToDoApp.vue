@@ -1,12 +1,12 @@
 <template>
   <div>
     <!-- title -->
-    <div id="grid-container">
-      <div id="grid-item-1">
+    <div id="container">
+      <div id="item-1">
         <p class="title">To Do List</p>
       </div>
       <!-- input -->
-      <div id="grid-item-2">
+      <div id="item-2">
         <input type="text" id="inputText" placeholder="Enter Task" v-model="task">
         <div @click="handleAdd" id="add">Add</div>
       </div>
@@ -119,7 +119,7 @@ export default {
 body{
   background-color: #363945;
 }
-#grid-container{
+#container{
   background-color: #374050;
   display: flex;
   flex-direction: column;
@@ -127,10 +127,10 @@ body{
   margin: auto;
   border: 1px solid black;
 }
-#grid-item-1{
+#item-1{
   text-align: center;
 }
-#grid-item-2{
+#item-2{
   display: flex;
   justify-content: center;
   align-items: center;
